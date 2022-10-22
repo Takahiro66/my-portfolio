@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+    <style>
+      .first-block {
+        height: 800px;
+        width: 100%;
+        background-color: azure;
+        display: flex;
+        justify-content: center;
+      }
+      #title-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #title {
+        font-size: 80px;
+      }
+      #sub-title {
+        font-size: 30px;
+      }
+
+      .second-block {
+        height: 800px;
+        width: 100%;
+        background-color: coral;
+      }
+      table {
+        width: 70%;
+        border-spacing: 0;
+        padding-left: 100px;
+        padding-top: 300px;
+      }
+      jh table th {
+        border-bottom: solid 2px;
+        padding: 10px 0;
+      }
+      table td {
+        border-bottom: solid 2px #ddd;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .third-block {
+        height: 800px;
+        width: 100%;
+        background-color: darkgrey;
+      }
+      .month {
+        font-size: 35px;
+        border-bottom: solid 3px black;
+        width: 90%;
+        padding-left: 10%;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-block">
+      <div id="title-box">
+        <h1 id="title">My Portfolio</h1>
+        <p id="sub-title">webexpert16期 上月貴博</p>
+      </div>
+    </div>
+    <div class="second-block">
+      <div about-me-box>
+        <table>
+          <tr>
+            <th>名前</th>
+            <td>上月貴博</td>
+          </tr>
+          <tr>
+            <th>誕生日</th>
+            <td>2000/4/18</td>
+          </tr>
+          <tr>
+            <th>大学</th>
+            <td>同志社大学</td>
+          </tr>
+          <tr>
+            <th>趣味</th>
+            <td>サイクリング・筋トレ・紅茶</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="third-block">
+      <h1>Recent activity</h1>
+      <p class="month">8月</p>
+      <div id="Aug"></div>
+      <p>長嶋スパーランド</p>
+      <p>上高地</p>
+      <p>富士山</p>
+      <p class="month">9月</p>
+      <p>高野山</p>
+      <p>曽爾高原</p>
+      <div id="'Sep"></div>
+      <p class="month">10月</p>
+      <div id="Oct"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

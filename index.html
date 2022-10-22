@@ -7,9 +7,257 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
+    <style>
+      .header-nav {
+        background-color: #000;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      nav {
+        margin-right: 5%;
+        color: white;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      #first-block {
+        height: 800px;
+        width: 100%;
+        background-color: azure;
+        display: flex;
+        justify-content: center;
+      }
+      #title-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #title {
+        font-size: 80px;
+      }
+      #sub-title {
+        font-size: 30px;
+      }
+
+      #second-block {
+        height: 800px;
+        width: 100%;
+        background-color: coral;
+      }
+      table {
+        width: 70%;
+        border-spacing: 0;
+        padding-left: 100px;
+        padding-top: 100px;
+      }
+      jh table th {
+        border-bottom: solid 2px;
+        padding: 10px 0;
+      }
+      table td {
+        border-bottom: solid 2px #ddd;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      #third-block {
+        height: 1700px;
+        width: 100%;
+        background-color: black;
+      }
+      .titles {
+        font-size: 50px;
+      }
+      #third-title {
+        color: white;
+        font-size: 50px;
+      }
+      .month {
+        font-size: 35px;
+        border-bottom: solid 3px white;
+        width: 100%;
+        padding-left: 10%;
+        display: inline-block;
+        color: white;
+      }
+      .events {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .event {
+        width: 300px;
+        height: 500px;
+      }
+      .event-image {
+        width: 300px;
+        height: 300px;
+      }
+      .content-detail {
+        border-bottom: solid 2px white;
+        color: white;
+        text-align: center;
+      }
+
+      footer {
+        color: white;
+        height: 30px;
+        background-color: black;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        justify-content: center;
+      }
+      #image-box {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
   </head>
   <body>
-    <h1>ポートフォリオサイト</h1>
+    <header class="header-nav">
+      <nav><a href="#first-block">Home</a></nav>
+      <nav><a href="#second-block">About me</a></nav>
+      <nav><a href="#third-block">Activity</a></nav>
+    </header>
+
+    <div id="first-block">
+      <div id="title-box">
+        <h1 id="title">My Portfolio</h1>
+        <p id="sub-title">webexpert16期 上月貴博</p>
+      </div>
+    </div>
+    <div id="second-block">
+      <h1 class="titles">About me</h1>
+      <div about-me-box>
+        <table>
+          <tr>
+            <th>名前</th>
+            <td>上月貴博</td>
+          </tr>
+          <tr>
+            <th>誕生日</th>
+            <td>2000/4/18</td>
+          </tr>
+          <tr>
+            <th>大学</th>
+            <td>同志社大学</td>
+          </tr>
+          <tr>
+            <th>趣味</th>
+            <td>サイクリング・筋トレ・紅茶</td>
+          </tr>
+        </table>
+        <div id="image-box">
+          <image src="./images/me.jpg" class="event-image"></image>
+          <image src="./images/bike.jpg" class="event-image"></image>
+        </div>
+      </div>
+    </div>
+    <div id="third-block">
+      <h1 id="third-title">Activity</h1>
+      <p class="month">8月</p>
+      <div class="events">
+        <div class="event">
+          <div class="event-contents">
+            <image src="./images/nagashima.jpg" class="event-image"></image>
+            <p class="content-detail">長嶋スパーランド</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-contents">
+            <image src="./images/arashiyama.jpg" class="event-image"></image>
+            <p class="content-detail">嵐山</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-contents">
+            <image src="./images/asuka.jpg" class="event-image"></image>
+            <p class="content-detail">明日香村</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="month">9月</p>
+      <div class="events">
+        <div class="event">
+          <div class="event-contents">
+            <image src="./images/kanu.jpg" class="event-image"></image>
+
+            <p class="content-detail">カヌー(西湖)</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-contents">
+            <image src="./images/ahou.jpg" class="event-image"></image>
+            <p class="content-detail">安房峠</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+        <div class="event">
+          <image src="./images/kamikoti.jpg" class="event-image"></image>
+
+          <div class="event-contents">
+            <p class="content-detail">上高地</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="month">10月</p>
+      <div class="events">
+        <div class="event">
+          <div class="event-contents">
+            <image src="./images/IMG_9711.JPG" class="event-image"></image>
+            <p class="content-detail">若草山</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-contents">
+            <image src="./images/nara1.jpg" class="event-image"></image>
+            <p class="content-detail">奈良公園</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-contents">
+            <image src="./images/soni.jpg" class="event-image"></image>
+            <p class="content-detail">曽爾高原</p>
+            <p class="content-detail">date</p>
+            <p class="content-detail">content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>©2022 Takahiro Kozuki</p>
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
