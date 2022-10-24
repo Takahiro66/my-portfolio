@@ -34,6 +34,15 @@
         display: flex;
         justify-content: center;
       }
+      @media screen and (max-width: 480px) {
+        #first-block {
+          height: 600px;
+          width: 100%;
+          background-color: azure;
+          display: flex;
+          justify-content: center;
+        }
+      }
       #title-box {
         display: flex;
         align-items: center;
@@ -43,6 +52,11 @@
       #title {
         font-size: 80px;
       }
+      @media screen and (max-width: 480px) {
+        #title {
+          font-size: 50px;
+        }
+      }
       #sub-title {
         font-size: 30px;
       }
@@ -51,6 +65,13 @@
         height: 800px;
         width: 100%;
         background-color: coral;
+      }
+      @media screen and (max-width: 480px) {
+        #second-block {
+          height: 700px;
+          width: 100%;
+          background-color: coral;
+        }
       }
       table {
         width: 70%;
@@ -73,6 +94,13 @@
         width: 100%;
         background-color: black;
       }
+      @media screen and (max-width: 480px) {
+        #third-block {
+          height: 1800px;
+          width: 100%;
+          background-color: black;
+        }
+      }
       .titles {
         font-size: 50px;
       }
@@ -92,14 +120,27 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
       }
       .event {
         width: 300px;
         height: 500px;
       }
+      @media screen and (max-width: 480px) {
+        .event {
+          width: 150px;
+          height: 250px;
+        }
+      }
       .event-image {
         width: 300px;
         height: 300px;
+      }
+      @media screen and (max-width: 480px) {
+        .event-image {
+          width: 150px;
+          height: 150px;
+        }
       }
       .content-detail {
         border-bottom: solid 2px white;
@@ -170,86 +211,66 @@
       <p class="month">8月</p>
       <div class="events">
         <div class="event">
-          <div class="event-contents">
-            <image src="./images/nagashima.jpg" class="event-image"></image>
-            <p class="content-detail">長嶋スパーランド</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <image src="./images/nagashima.jpg" class="event-image"></image>
+          <p class="content-detail">長嶋スパーランド</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
         <div class="event">
-          <div class="event-contents">
-            <image src="./images/arashiyama.jpg" class="event-image"></image>
-            <p class="content-detail">嵐山</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <image src="./images/arashiyama.jpg" class="event-image"></image>
+          <p class="content-detail">嵐山</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
         <div class="event">
-          <div class="event-contents">
-            <image src="./images/asuka.jpg" class="event-image"></image>
-            <p class="content-detail">明日香村</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <image src="./images/asuka.jpg" class="event-image"></image>
+          <p class="content-detail">明日香村</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
       </div>
 
       <p class="month">9月</p>
       <div class="events">
         <div class="event">
-          <div class="event-contents">
-            <image src="./images/kanu.jpg" class="event-image"></image>
-
-            <p class="content-detail">カヌー(西湖)</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <image src="./images/kanu.jpg" class="event-image"></image>
+          <p class="content-detail">カヌー(西湖)</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
         <div class="event">
-          <div class="event-contents">
-            <image src="./images/ahou.jpg" class="event-image"></image>
-            <p class="content-detail">安房峠</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <image src="./images/ahou.jpg" class="event-image"></image>
+          <p class="content-detail">安房峠</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
         <div class="event">
           <image src="./images/kamikoti.jpg" class="event-image"></image>
-
-          <div class="event-contents">
-            <p class="content-detail">上高地</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <p class="content-detail">上高地</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
       </div>
 
       <p class="month">10月</p>
       <div class="events">
         <div class="event">
-          <div class="event-contents">
-            <image src="./images/IMG_9711.JPG" class="event-image"></image>
-            <p class="content-detail">若草山</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <image src="./images/IMG_9711.JPG" class="event-image"></image>
+          <p class="content-detail">若草山</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
         <div class="event">
-          <div class="event-contents">
-            <image src="./images/nara1.jpg" class="event-image"></image>
-            <p class="content-detail">奈良公園</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <image src="./images/nara1.jpg" class="event-image"></image>
+          <p class="content-detail">奈良公園</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
         <div class="event">
-          <div class="event-contents">
-            <image src="./images/soni.jpg" class="event-image"></image>
-            <p class="content-detail">曽爾高原</p>
-            <p class="content-detail">date</p>
-            <p class="content-detail">content</p>
-          </div>
+          <image src="./images/soni.jpg" class="event-image"></image>
+          <p class="content-detail">曽爾高原</p>
+          <p class="content-detail">date</p>
+          <p class="content-detail">content</p>
         </div>
       </div>
     </div>
